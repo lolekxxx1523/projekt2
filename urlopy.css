@@ -1,0 +1,571 @@
+/*  year-calendar */
+
+.month-container thead tr {
+    border-bottom: 1px solid;
+}
+
+.calendar table.month th.month-title {
+    font-size: 15px !important;
+    padding-bottom: 0px !important;
+}
+
+.day-header {
+    font-weight: normal;
+}
+
+
+/*  /year-calendar */
+
+.form-control-static {
+    font-size: 14px;
+}
+
+
+/*
+.cal-swieto {
+	background-color: red;
+}*/
+
+
+/*table#datatable_ajax tbody td.textL
+{
+	text-align: left !important;
+}*/
+
+table#datatable_ajax tbody td {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.form-control-static {
+    margin: 1px;
+}
+
+.tbl-wykorzystany-urlop {
+    margin: 7px;
+    border-color: #fefeff;
+}
+
+.tbl-wykorzystany-urlop td {
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.tbl-wykorzystany-urlop td.text-left {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.tbl-wykorzystany-urlop th {
+    border: 1px solid #aba8a8;
+    text-align: center;
+    padding: 6px;
+    font-weight: 600;
+    background-color: #f3f3f3;
+}
+
+
+/* colors.php
+.day-weekend { 
+	background-color: #e5f6ff;
+}
+*/
+
+.swieto-ramka {
+    border: 1px solid #f9a0ad !important;
+}
+
+
+/* plan urlopów lista/tabela begin */
+
+.sched_tbl {
+    border: 1px solid #739e92;
+}
+
+.sched_tbl tr {
+    background-color: white;
+}
+
+.sched_tbl tr:hover {
+    background-color: #efeeee;
+}
+
+.sched_th {
+    width: 35px;
+    text-align: center;
+    background-color: #0fa278;
+    /* #26A69A; */
+    color: white;
+    font-weight: normal;
+}
+
+.shed_thweek {
+    background-color: #4c8474;
+}
+
+.shed_thswieto {
+    background-color: #d07171;
+}
+
+.sched_td {
+    padding: 4px;
+    padding-left: 10px;
+}
+
+.sched_tdi {
+    text-align: center;
+    color: #86868a;
+    /* #454556; */
+    cursor: pointer;
+}
+
+.sch_pad01 {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    color: #6a6a6b;
+    width: 40px;
+}
+
+.shed_tdiweek {
+    background-color: #d4f9ee;
+}
+
+.sched_tdiswieto {
+    background-color: #fdd7d7;
+}
+
+.sched_tdiurlop {
+    background-color: #7bff96;
+    color: #454556;
+}
+
+.sched_btn {
+    width: 80px;
+}
+
+.sched_fill {
+    background-color: #E5F6FF;
+    margin: 2px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.sched_paging {
+    padding: 10px;
+}
+
+.sched_div {
+    border-bottom: 1px solid black;
+}
+
+.sched_zajety {
+    background-color: #FFF9FB;
+    margin: 2px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shed_pusto {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    color: gray;
+}
+
+.sched_free {
+    background-color: #FCFFFE;
+    margin: 2px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sch-bt-check {
+    padding-right: 4px;
+    width: 25px;
+    border: 1px solid transparent;
+    background-color: #e9ffe9;
+}
+
+.sch-bt-uncheck {
+    padding-right: 4px;
+    width: 25px;
+    border: 1px solid transparent;
+    background-color: #f9f9f9;
+}
+
+.sch-plan-check {
+    color: green;
+}
+
+.sch-plan-uncheck {
+    color: #e64924;
+}
+
+
+/* /plan urlopow end */
+
+
+/* loader begin */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50% !important;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite !important;
+    /* Safari */
+    animation: spin 2s linear infinite !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: -75px 0 0 -75px;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.pageloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* background: url('images/yourLoaderImage.gif') 50% 50% no-repeat rgb(249,249,249); */
+    background-color: white;
+    opacity: .6;
+    margin: 0px;
+}
+
+
+/* loader end */
+
+.zeroMargin {
+    margin: 0px !important;
+}
+
+.hr2 {
+    border-top: 1px solid #8da6b7;
+}
+
+.modal-header {
+    background-color: #3598dc;
+    font-size: 14px;
+    color: white;
+}
+
+.color_swieto {
+    background-color: #c1eaff;
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+.tdi_swieto_white {
+    background-color: white;
+}
+
+.tdi_week_white {
+    background-color: white;
+}
+
+.tdi_nieob {
+    background-color: #cccccc;
+    color: #7f7e7c;
+}
+
+.tdi_zdalna_wn {
+    /* praca zdalna z wniosku */
+    /* background-color: #ffebcf; */
+    background-color: #fff1c1;
+    color: #7f7e7c;
+}
+
+.tdi_delegacja {
+    background-color: #c9ddff;
+    color: #7f7e7c;
+}
+
+.tdi_biuro {
+    background-color: #c4efc4;
+}
+
+.komorka_ng {
+    padding-left: 25px;
+    font-weight: 600;
+    background-color: #f1f1f1;
+}
+
+.td_kierownik {
+    font-weight: 600;
+}
+
+.tdi_today {
+    border-left: 2px solid #f65c5c !important;
+    border-right: 2px solid #f65c5c !important;
+}
+
+.tdi_today_th {
+    border: 2px solid #f65c5c !important;
+}
+
+.tdi_zdalna_on {
+    /* praca zdalna ustawiana */
+    background-color: #ffdcac;
+    color: #7f7e7c;
+}
+
+.data_changed {
+    background-color: #fdd7d7;
+}
+
+.tdi_button {
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.btn-sm2 {
+    font-size: 12px;
+    padding: 4px 10px 4px 10px;
+}
+
+.color-disabled {
+    color: #e0e0e0;
+}
+
+a.mail-enabled:hover {
+    color: #246592 !important;
+}
+
+a.mail-disabled {
+    cursor: auto;
+}
+
+.page-header.navbar .menu-toggler {
+    background-image: url(admin/layout/img/sidebar_toggler_icon_grey.png);
+    opacity: 0.8;
+}
+
+
+/* karta czasu pracy */
+
+.tabela-czasu-pracy {
+    width: 100%;
+    border-bottom: 1px solid #3598dc;
+    border-collapse: separate;
+}
+
+.tabela-czasu-pracy tr th {
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #3598dc;
+    padding: 5px;
+}
+
+.tabela-czasu-pracy .border-r {
+    border-right: 1px solid #3598dc;
+}
+
+.tabela-czasu-pracy .table-no-records {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.tabela-czasu-pracy tr td {
+    text-align: center;
+    border-bottom: 1px solid #9ED8FF;
+    padding: 4px;
+}
+
+.tabela-czasu-pracy .th_sticky {
+    position: sticky;
+    top: 27px;
+    background-color: #ececec;
+    border-bottom: 1px solid #3598dc;
+}
+
+.tabela-czasu-pracy tr:hover td {
+    background-color: #E2E2E2 !important;
+}
+
+.tdibold {
+    font-weight: 600;
+}
+
+.tabela-czasu-pracy .today {
+    background-color: #ffffce;
+}
+
+.tabela-czasu-pracy .grid-edit {
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #a9a8a8;
+    box-shadow: none;
+    width: 45px;
+    text-align: center;
+}
+
+.tabela-czasu-pracy .grid-edit:focus {
+    outline: 0px;
+}
+
+.tabela-czasu-pracy .grid-btn {
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    background-color: #3c8e40;
+    border: 1px solid #3c6f3e;
+    box-shadow: none;
+    width: 50px;
+}
+
+.tabela-czasu-pracy .grid-btn:focus {
+    outline: 0px;
+}
+
+.tabela-czasu-pracy .grid-btn2 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    box-shadow: none;
+    width: 50px;
+}
+
+.tabela-czasu-pracy .grid-btn2:hover {
+    background-color: #ebf9ec;
+    border: 1px solid #9c9b9b;
+}
+
+.tabela-czasu-pracy .footer {
+    border-right: 1px solid #3598dc;
+    border-top: 1px solid #3598dc;
+    font-weight: 600;
+}
+
+.tabela-czasu-pracy .silver {
+    background-color: #ececec;
+}
+
+.tabela-czasu-pracy .shed_tdiweek_silver {
+    background-color: #ececec;
+}
+
+
+/* /krarta czasu pracy */
+
+.font-italic {
+    font-style: italic;
+}
+
+.portlet>.portlet-title>.nav-tabs>li.active>a,
+.portlet>.portlet-title>.nav-tabs>li:hover>a {
+    background-color: #384e6b;
+    color: white;
+}
+
+.portlet>.portlet-title>.nav-tabs>li>a {
+    padding: 8px 16px;
+}
+
+table.tbl-lista thead tr th,
+table.tbl-lista tr td {
+    text-align: center;
+}
+
+table.tbl-lista tbody tr td.text-left {
+    text-align: left !important;
+}
+
+table.tbl-lista tbody td {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+table.tbl-lista tbody td .btn-pad-edit {
+    padding-bottom: 3px;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+table.tbl-lista tbody td .btn-pad-dalej {
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-right: 5px;
+}
+
+table.tbl-lista tbody td.table-no-records {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+table>tbody>tr>td.td_podkom {
+    padding-left: 43px;
+}
+
+table>tbody>tr>td.td_komorka {
+    padding-left: 18px;
+    vertical-align: middle;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+    background-color: #e5e3e3;
+}
+
+.mniej8h {
+    background-color: #fffce3;
+}
